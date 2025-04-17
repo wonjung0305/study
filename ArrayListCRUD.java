@@ -1,11 +1,25 @@
 import java.util.ArrayList;
 
-public class TodoList {
+public class ArrayListCRUD {
     private ArrayList<String> todos = new ArrayList<>();
 
     // 항목 추가
     public void addTodo(String item) {
         todos.add(item);
+        /*
+         * // 직접 추가하는 방식
+         * list.add("Alice"); 
+            list.add("Bob");
+
+            System.out.println(list.get(0)); // "Alice"
+         */
+
+         /*
+            if (list.contains("Bob")) {
+                int index = list.indexOf("Bob");
+                System.out.println("Bob의 인덱스는: " + index);
+            }
+          */
     }
 
     // 항목 삭제
@@ -21,7 +35,7 @@ public class TodoList {
     }
 
     public static void main(String[] args) {
-        TodoList list = new TodoList();
+        ArrayListCRUD list = new ArrayListCRUD();
         list.addTodo("스터디 자료 정리");
         list.addTodo("Java 시험 공부");
         list.addTodo("친구 생일 선물 구매");
