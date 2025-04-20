@@ -36,7 +36,7 @@ public class Main {
         case "add":
           manager.addItem();
           break;
-        case "del";
+        case "del":
           manager.delItem();
           break;
         case "edit":
