@@ -17,7 +17,7 @@ int main(){
 
   // Assume the number of file is not fixed 
   while(1){
-    char filename[10]; // filename
+    char filename[10];
 
     // make a filename(file1.txt, file2.txt), and open the file (file1.txt ...)
     sprintf(filename, "file%d.txt", i);
@@ -36,13 +36,14 @@ int main(){
     int first = 1;
 
     // read numbers until eof
-    while(fscanf(fp, "%d", &num) != EOF){
       // the first number is the smallest 
+      // compare and find the smallest number
+    while(fscanf(fp, "%d", &num) != EOF){
       if(first == 1){
         smallNum = num;
         first = 0;
       }
-      else{ // compare and find the smallest number
+      else{ 
         if(num < smallNum){
           smallNum = num;
         }
